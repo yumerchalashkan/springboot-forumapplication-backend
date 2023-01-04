@@ -13,7 +13,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/like")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+//@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class LikeController {
     private final LikeService likeService;
 
