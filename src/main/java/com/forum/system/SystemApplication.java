@@ -47,12 +47,12 @@ public class SystemApplication implements CommandLineRunner {
 
 		Post post = new Post();
 		post.setTitle("What is Spring Boot?");
-		post.setText("text");
+		post.setText("Spring Boot is a popular Java-based framework that is used to build web applications and microservices. It is built on top of the Spring Framework and provides a simplified way to configure and set up a Spring application. With Spring Boot, developers can quickly create stand-alone, production-ready applications by providing a set of default configurations for common application needs such as embedding a web server, connecting to a database, configuring security settings, and setting up logging. Spring Boot also makes it easy to customize the configuration of an application by providing options such as using properties files, command-line arguments, and environment variables. Additionally, Spring Boot offers a number of \"Starters\" which are pre-configured dependencies that you can include in your project to add functionality quickly. Overall, Spring Boot simplifies the development process by taking care of the boilerplate configuration and providing a wide range of features out of the box.");
 		post.setUser(user);
 
 		PostCreateRequest postCreateRequest = new PostCreateRequest();
 		postCreateRequest.setTitle("What is Spring Boot?");
-		postCreateRequest.setText("text");
+		postCreateRequest.setText("Spring Boot is a popular Java-based framework that is used to build web applications and microservices. It is built on top of the Spring Framework and provides a simplified way to configure and set up a Spring application. With Spring Boot, developers can quickly create stand-alone, production-ready applications by providing a set of default configurations for common application needs such as embedding a web server, connecting to a database, configuring security settings, and setting up logging. Spring Boot also makes it easy to customize the configuration of an application by providing options such as using properties files, command-line arguments, and environment variables. Additionally, Spring Boot offers a number of \"Starters\" which are pre-configured dependencies that you can include in your project to add functionality quickly. Overall, Spring Boot simplifies the development process by taking care of the boilerplate configuration and providing a wide range of features out of the box.");
 		postCreateRequest.setUserId(user.getId());
 		postService.save(postCreateRequest);
 
