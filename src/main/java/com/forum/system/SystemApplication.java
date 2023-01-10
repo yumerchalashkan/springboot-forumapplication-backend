@@ -46,12 +46,12 @@ public class SystemApplication implements CommandLineRunner {
 		userService.save(user2);
 
 		Post post = new Post();
-		post.setTitle("title");
+		post.setTitle("What is Spring Boot?");
 		post.setText("text");
 		post.setUser(user);
 
 		PostCreateRequest postCreateRequest = new PostCreateRequest();
-		postCreateRequest.setTitle("title");
+		postCreateRequest.setTitle("What is Spring Boot?");
 		postCreateRequest.setText("text");
 		postCreateRequest.setUserId(user.getId());
 		postService.save(postCreateRequest);
