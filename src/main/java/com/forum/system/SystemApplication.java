@@ -40,6 +40,11 @@ public class SystemApplication implements CommandLineRunner {
 		user.setPassword(passwordEncoder.encode("admin"));
 		userService.save(user);
 
+		User user2 = new User();
+		user2.setUsername("demo");
+		user2.setPassword(passwordEncoder.encode("demo"));
+		userService.save(user2);
+
 		Post post = new Post();
 		post.setTitle("title");
 		post.setText("text");
