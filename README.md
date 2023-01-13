@@ -1,4 +1,4 @@
-# springboot-forumapplication-backend
+# Spring Boot Forum Application Backend
 
 A web-based forum application developed using Spring Boot as the primary framework. The system allows users to register and log in, and once logged in they can create and interact with posts by liking or commenting on them. The application is divided into two parts: the back-end and the front-end.
 
